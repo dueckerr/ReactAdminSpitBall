@@ -1,0 +1,6 @@
+{
+  "name": "Equipment",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Equipment.js"
+}
