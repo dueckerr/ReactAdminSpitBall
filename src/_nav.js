@@ -76,12 +76,12 @@ export default {
         },
         {
           name: 'Frac Pumps',
-          url: '/base/cards',
+          url: '/base/FracPump',
           icon: 'icon-puzzle',
         },
         {
           name: 'Blenders',
-          url: '/base/carousels',
+          url: '/base/blender',
           icon: 'icon-puzzle',
         },
         {
@@ -89,11 +89,6 @@ export default {
           url: '/base/collapses',
           icon: 'icon-puzzle',
         },
-        // {
-        //   name: 'Iron Trailer',
-        //   url: '/base/list-groups',
-        //   icon: 'icon-puzzle',
-        // },
         {
           name: 'Hydration',
           url: '/base/navs',
@@ -104,17 +99,22 @@ export default {
           url: '/base/paginations',
           icon: 'icon-puzzle',
         }
-        // {
-        //   name: 'Chemical Tube',
-        //   url: '/base/forms',
-        //   icon: 'icon-puzzle',
-        // },
-        // {
-        //   name: 'Chemical Van',
-        //   url: '/base/jumbotrons',
-        //   icon: 'icon-puzzle',
-        // }
       ],
+    },
+    {
+      name: 'End of Shift Reports',
+      url: '/base/EOS',
+      icon: 'icon-puzzle',
+    },
+    {
+      name: 'Parts',
+      url: '/base/forms',
+      icon: 'icon-puzzle',
+    },
+    {
+      name: 'Reports',
+      url: '/base/jumbotrons',
+      icon: 'icon-puzzle',
     },
     {
       name: 'Pump Maintenance',

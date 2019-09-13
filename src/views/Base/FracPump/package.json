@@ -1,0 +1,6 @@
+{
+  "name": "FracPump",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FracPump.js"
+}

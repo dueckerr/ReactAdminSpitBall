@@ -1,0 +1,6 @@
+{
+  "name": "End of Shift",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EOS.js"
+}
