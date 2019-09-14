@@ -36,22 +36,27 @@ export default {
         },        
         {
           name: 'Fleet 1',
-          url: '/buttons/Fleet1',
+          url: '/Fleets/Fleet1',
           icon: 'icon-cursor',
         },
         {
           name: 'Fleet 2',
-          url: '/buttons/button-dropdowns',
+          url: '/Fleets/Fleet2',
           icon: 'icon-cursor',
         },
         {
           name: 'Fleet 3',
-          url: '/buttons/button-groups',
+          url: '/Fleets/Fleet3',
           icon: 'icon-cursor',
         },
         {
           name: 'Fleet 4',
-          url: '/buttons/brand-buttons',
+          url: '/Fleets/Fleet4',
+          icon: 'icon-cursor',
+        },
+        {
+          name: 'Add Fleet',
+          url: '/Fleets/AddFleet',
           icon: 'icon-cursor',
         },
       ],
@@ -66,54 +71,54 @@ export default {
     },
     {
       name: 'Equipment',
-      url: '/base',
+      url: '/Equipment',
       icon: 'icon-puzzle',
       children: [
         {
           name: 'All',
-          url: '/base/equipmentlocation',
+          url: '/Equipment/equipmentlocation',
           icon: 'icon-puzzle',
         },
         {
           name: 'Frac Pumps',
-          url: '/base/FracPump',
+          url: '/Equipment/FracPump',
           icon: 'icon-puzzle',
         },
         {
           name: 'Blenders',
-          url: '/base/blender',
+          url: '/Equipment/blender',
           icon: 'icon-puzzle',
         },
         {
           name: 'Data Vans',
-          url: '/base/collapses',
+          url: '/Equipment/collapses',
           icon: 'icon-puzzle',
         },
         {
           name: 'Hydration',
-          url: '/base/navs',
+          url: '/Equipment/navs',
           icon: 'icon-puzzle',
         },
         {
           name: 'Tractors',
-          url: '/base/paginations',
+          url: '/Equipment/paginations',
           icon: 'icon-puzzle',
         }
       ],
     },
     {
       name: 'End of Shift Reports',
-      url: '/base/EOS',
+      url: '/Equipment/EOS',
       icon: 'icon-puzzle',
     },
     {
       name: 'Parts',
-      url: '/base/forms',
+      url: '/Equipment/forms',
       icon: 'icon-puzzle',
     },
     {
       name: 'Reports',
-      url: '/base/jumbotrons',
+      url: '/Equipment/jumbotrons',
       icon: 'icon-puzzle',
     },
     {

@@ -1,26 +1,26 @@
 import React from 'react';
 
-const Breadcrumbs = React.lazy(() => import('./views/Base/EquipmentLocation/Equipment'));
-const FracPump = React.lazy(() => import('./views/Base/FracPump'));
-const blender = React.lazy(() => import('./views/Base/Blender/blender'));
-const Collapses = React.lazy(() => import('./views/Base/Collapses'));
-const Dropdowns = React.lazy(() => import('./views/Base/Dropdowns'));
-const Forms = React.lazy(() => import('./views/Base/Forms'));
-const Jumbotrons = React.lazy(() => import('./views/Base/Jumbotrons'));
-const EOS = React.lazy(() => import('./views/Base/EOS/EOS'));
-const Navbars = React.lazy(() => import('./views/Base/Navbars'));
-const Navs = React.lazy(() => import('./views/Base/Navs'));
-const Paginations = React.lazy(() => import('./views/Base/Paginations'));
-const Popovers = React.lazy(() => import('./views/Base/Popovers'));
-const ProgressBar = React.lazy(() => import('./views/Base/ProgressBar'));
-const Switches = React.lazy(() => import('./views/Base/Switches'));
-const Tables = React.lazy(() => import('./views/Base/Tables'));
-const Tabs = React.lazy(() => import('./views/Base/Tabs'));
-const Tooltips = React.lazy(() => import('./views/Base/Tooltips'));
-const BrandButtons = React.lazy(() => import('./views/Buttons/BrandButtons'));
-const ButtonDropdowns = React.lazy(() => import('./views/Buttons/ButtonDropdowns'));
-const ButtonGroups = React.lazy(() => import('./views/Buttons/ButtonGroups'));
-const Buttons = React.lazy(() => import('./views/Buttons/Fleet1'));
+const Breadcrumbs = React.lazy(() => import('./views/Equipment/EquipmentLocation/Equipment'));
+const FracPump = React.lazy(() => import('./views/Equipment/FracPump/FracPump'));
+const blender = React.lazy(() => import('./views/Equipment/Blender/blender'));
+const Collapses = React.lazy(() => import('./views/Equipment/Collapses/Collapses'));
+const Dropdowns = React.lazy(() => import('./views/Equipment/Dropdowns/Dropdowns'));
+const Forms = React.lazy(() => import('./views/Equipment/Forms/Forms'));
+const Jumbotrons = React.lazy(() => import('./views/Equipment/Jumbotrons/Jumbotrons'));
+const EOS = React.lazy(() => import('./views/Equipment/EOS/EOS'));
+const Navbars = React.lazy(() => import('./views/Equipment/Navbars/Navbars'));
+const Navs = React.lazy(() => import('./views/Equipment/Navs/Navs'));
+const Paginations = React.lazy(() => import('./views/Equipment/Paginations/Pagnations'));
+const Popovers = React.lazy(() => import('./views/Equipment/Popovers/Popovers'));
+const ProgressBar = React.lazy(() => import('./views/Equipment/ProgressBar/ProgressBar'));
+const Switches = React.lazy(() => import('./views/Equipment/Switches/Switches'));
+const Tables = React.lazy(() => import('./views/Equipment/Tables/Tables'));
+const Tabs = React.lazy(() => import('./views/Equipment/Tabs/Tabs'));
+const Tooltips = React.lazy(() => import('./views/Equipment/Tooltips/Tooltips'));
+const Fleet4 = React.lazy(() => import('./views/Fleets/Fleet4/Fleet4'));
+const Fleet2 = React.lazy(() => import('./views/Fleets/Fleet2/Fleet2'));
+const Fleet3 = React.lazy(() => import('./views/Fleets/Fleet3/Fleet3'));
+const Fleets = React.lazy(() => import('./views/Fleets/Fleet1/Fleet1'));
 const PumpMaintenance = React.lazy(() => import('./views/PumpMaintenance/PumpMaintenance'));
 const Dashboard = React.lazy(() => import('./views/Dashboard'));
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
@@ -44,29 +44,29 @@ const routes = [
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
-  { path: '/base', exact: true, name: 'Base', component: FracPump },
-  { path: '/base/FracPump', name: 'FracPump', component: FracPump },
-  { path: '/base/forms', name: 'Forms', component: Forms },
-  { path: '/base/switches', name: 'Switches', component: Switches },
-  { path: '/base/tables', name: 'Tables', component: Tables },
-  { path: '/base/tabs', name: 'Tabs', component: Tabs },
-  { path: '/base/EquipmentLocation', name: 'Equipment', component: Breadcrumbs },
-  { path: '/base/blender', name: 'blender', component: blender },
-  { path: '/base/collapses', name: 'Collapse', component: Collapses },
-  { path: '/base/dropdowns', name: 'Dropdowns', component: Dropdowns },
-  { path: '/base/jumbotrons', name: 'Jumbotrons', component: Jumbotrons },
-  { path: '/base/EOS', name: 'EOS', component: EOS },
-  { path: '/base/navbars', name: 'Navbars', component: Navbars },
-  { path: '/base/navs', name: 'Navs', component: Navs },
-  { path: '/base/paginations', name: 'Paginations', component: Paginations },
-  { path: '/base/popovers', name: 'Popovers', component: Popovers },
-  { path: '/base/progress-bar', name: 'Progress Bar', component: ProgressBar },
-  { path: '/base/tooltips', name: 'Tooltips', component: Tooltips },
-  { path: '/buttons', exact: true, name: 'Buttons', component: Buttons },
-  { path: '/buttons/Fleet1', name: 'Fleet1', component: Buttons },
-  { path: '/buttons/button-dropdowns', name: 'Button Dropdowns', component: ButtonDropdowns },
-  { path: '/buttons/button-groups', name: 'Button Groups', component: ButtonGroups },
-  { path: '/buttons/brand-buttons', name: 'Brand Buttons', component: BrandButtons },
+  { path: '/Equipment', exact: true, name: 'Equipment', component: FracPump },
+  { path: '/Equipment/FracPump', name: 'FracPump', component: FracPump },
+  { path: '/Equipment/forms', name: 'Forms', component: Forms },
+  { path: '/Equipment/switches', name: 'Switches', component: Switches },
+  { path: '/Equipment/tables', name: 'Tables', component: Tables },
+  { path: '/Equipment/tabs', name: 'Tabs', component: Tabs },
+  { path: '/Equipment/EquipmentLocation', name: 'Equipment', component: Breadcrumbs },
+  { path: '/Equipment/blender', name: 'blender', component: blender },
+  { path: '/Equipment/collapses', name: 'Collapse', component: Collapses },
+  { path: '/Equipment/dropdowns', name: 'Dropdowns', component: Dropdowns },
+  { path: '/Equipment/jumbotrons', name: 'Jumbotrons', component: Jumbotrons },
+  { path: '/Equipment/EOS', name: 'EOS', component: EOS },
+  { path: '/Equipment/navbars', name: 'Navbars', component: Navbars },
+  { path: '/Equipment/navs', name: 'Navs', component: Navs },
+  { path: '/Equipment/paginations', name: 'Paginations', component: Paginations },
+  { path: '/Equipment/popovers', name: 'Popovers', component: Popovers },
+  { path: '/Equipment/progress-bar', name: 'Progress Bar', component: ProgressBar },
+  { path: '/Equipment/tooltips', name: 'Tooltips', component: Tooltips },
+  { path: '/Fleets', exact: true, name: 'Fleets', component: Fleets },
+  { path: '/Fleets/Fleet1', name: 'Fleet 1', component: Fleets },
+  { path: '/Fleets/Fleet2', name: 'Fleet 2', component: Fleet2 },
+  { path: '/Fleets/Fleet3', name: 'Fleet 3', component: Fleet3 },
+  { path: '/Fleets/Fleet4', name: 'Fleet 4', component: Fleet4 },
   { path: '/icons', exact: true, name: 'Icons', component: CoreUIIcons },
   { path: '/icons/coreui-icons', name: 'CoreUI Icons', component: CoreUIIcons },
   { path: '/icons/flags', name: 'Flags', component: Flags },

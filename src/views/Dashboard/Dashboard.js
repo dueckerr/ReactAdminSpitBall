@@ -124,7 +124,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Collapse <small>accordion</small>
+                <i className="fa fa-align-justify"></i> Last 5 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -139,11 +139,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                     </CardBody>
                     </Collapse>
                   </Card>
@@ -156,11 +157,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -173,11 +175,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -202,8 +205,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -218,8 +221,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
@@ -234,8 +237,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -273,7 +276,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Collapse <small>accordion</small>
+                <i className="fa fa-align-justify"></i> Last 5 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -288,11 +291,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                     </CardBody>
                     </Collapse>
                   </Card>
@@ -305,11 +309,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -322,11 +327,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -351,8 +357,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -367,8 +373,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
@@ -383,8 +389,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -422,7 +428,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Collapse <small>accordion</small>
+                <i className="fa fa-align-justify"></i> Last 5 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -437,11 +443,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                     </CardBody>
                     </Collapse>
                   </Card>
@@ -454,11 +461,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -471,11 +479,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -500,8 +509,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -516,8 +525,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
@@ -532,8 +541,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -571,7 +580,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Collapse <small>accordion</small>
+                <i className="fa fa-align-justify"></i> Last 5 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -586,11 +595,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                     </CardBody>
                     </Collapse>
                   </Card>
@@ -603,11 +613,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -620,11 +631,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -649,8 +661,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -665,8 +677,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
@@ -681,8 +693,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -720,7 +732,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Collapse <small>accordion</small>
+                <i className="fa fa-align-justify"></i> Last 5 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -735,11 +747,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                     </CardBody>
                     </Collapse>
                   </Card>
@@ -752,11 +765,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -769,11 +783,12 @@ class Dashboard extends Component {
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
                       <div>Current Pad: Spud Muffin</div>
-                      <div>Customer: Devon</div>
+                      <div>Well: ABC</div>
+                      <div>Stage: 12</div>
                       <div>Pad Progress: 40 of 150 Stages</div>
-                      <div>NPT Last 24: XX:XX</div>
-                      <div>Pump Hours Last 24: XX:XX</div>
-                      <div>Stages Last 24: X </div>
+                      <div>Open: XX:xx</div>
+                      <div>Closed: XX:xx</div>
+                      <div>Stages Issues </div>
                       </CardBody>
                     </Collapse>
                   </Card>
@@ -798,8 +813,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
@@ -814,8 +829,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
@@ -830,8 +845,8 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
                       <CardBody>
-                      <div>Pumping Hours: XX:xx</div>
                       <div>Zones Completed: X</div>
+                      <div>Pumping Hours: XX:xx</div>
                       <div>NPT: XX:xx</div>
                       <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
                       <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
