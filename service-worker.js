@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ReactAdminSpitBall/precache-manifest.42a233a6f8e44b0c011ff791ec475d07.js"
+  "/ReactAdminSpitBall/precache-manifest.323ca9668d84bf2520cb06dce968de77.js"
 );
 
 self.addEventListener('message', (event) => {
