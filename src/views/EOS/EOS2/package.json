@@ -1,0 +1,6 @@
+{
+  "name": "EOS2",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EOS2.js"
+}

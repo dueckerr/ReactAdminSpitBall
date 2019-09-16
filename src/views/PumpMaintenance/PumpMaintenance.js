@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table } from 'reactstrap';
+import { Badge, Card, CardBody, CardHeader, Col, Pagination, PaginationItem, PaginationLink, Row, Table, Label, Form, FormGroup, Input } from 'reactstrap';
 
 class Tables extends Component {
   render() {
@@ -9,7 +9,45 @@ class Tables extends Component {
       <Col>
         <Card>
           <CardHeader>
-            <i className="fa fa-align-justify"></i> Combined All Table
+                <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
+                  <FormGroup row>
+                  <strong>Filter Pumps</strong> 
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Label htmlFor="select">Select Engie Type</Label>
+                    </Col>
+                    <Col xs="12" md="1" lg="2">
+                      <Input type="select" name="select" id="select">
+                        <option value="0">Please select</option>
+                        <option value="1">CAT</option>
+                        <option value="2">NRG</option>
+                        <option value="3">SPM</option>
+                      </Input>
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                    <Label htmlFor="select">Select Fluid End Type</Label>
+                    </Col>
+                    <Col xs="12" md="1" lg="2">
+                      <Input type="select" name="select" id="select">
+                        <option value="0">Please select</option>
+                        <option value="1">CAT</option>
+                        <option value="2">Kerr Gen 3</option>
+                        <option value="3">Valtek</option>
+                        <option value="4">Endurance</option>
+                        <option value="5">JPM</option>
+                        <option value="6">ST9</option>
+                      </Input>
+                    </Col>
+                  </FormGroup>
+                </Form>
           </CardHeader>
           <CardBody>
             <Table hover bordered striped responsive size="sm">
@@ -27,7 +65,7 @@ class Tables extends Component {
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -35,7 +73,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -43,7 +81,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -51,7 +89,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -59,7 +97,7 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -67,7 +105,7 @@ class Tables extends Component {
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -75,7 +113,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -83,7 +121,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -91,7 +129,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -99,7 +137,7 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -107,7 +145,7 @@ class Tables extends Component {
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -115,7 +153,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -123,7 +161,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -131,7 +169,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -139,7 +177,7 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -147,7 +185,7 @@ class Tables extends Component {
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -155,7 +193,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -163,7 +201,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -171,7 +209,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -179,7 +217,7 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -187,7 +225,7 @@ class Tables extends Component {
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -195,7 +233,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -203,7 +241,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -211,7 +249,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -219,14 +257,14 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr><tr>
                 <td>Vishnu Serghei</td>
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -234,7 +272,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -242,7 +280,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -250,7 +288,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -258,14 +296,14 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr><tr>
                 <td>Vishnu Serghei</td>
                 <td>2012/01/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -273,7 +311,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="danger">Banned</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -281,7 +319,7 @@ class Tables extends Component {
                 <td>2012/02/01</td>
                 <td>Admin</td>
                 <td>
-                  <Badge color="secondary">Inactive</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -289,7 +327,7 @@ class Tables extends Component {
                 <td>2012/03/01</td>
                 <td>Member</td>
                 <td>
-                  <Badge color="warning">Pending</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
@@ -297,7 +335,7 @@ class Tables extends Component {
                 <td>2012/01/21</td>
                 <td>Staff</td>
                 <td>
-                  <Badge color="success">Active</Badge>
+                  <Badge color="success">Details</Badge>
                 </td>
               </tr>
               </tbody>
