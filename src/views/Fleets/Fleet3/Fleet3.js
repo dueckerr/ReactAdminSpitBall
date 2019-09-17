@@ -133,18 +133,21 @@ class Dashboard extends Component {
                 <small> Open/Close, NPT events, equipment issues... Some of this will be pop ups</small>
               </CardHeader>
               <CardBody>
-                <FormGroup>
-                  <Label htmlFor="company">Company</Label>
-                  <Input type="text" id="company" placeholder="Enter your company name" />
-                </FormGroup>
-                <FormGroup>
-                  <Label htmlFor="vat">VAT</Label>
-                  <Input type="text" id="vat" placeholder="DE1234567890" />
-                </FormGroup>
-                <FormGroup>
-                  <Label htmlFor="street">Street</Label>
-                  <Input type="text" id="street" placeholder="Enter street name" />
-                </FormGroup>
+              <Col md="4">
+                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Start Stage</Button>
+              </Col>
+              <br></br>
+              <Col md="4">
+                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i>Open/Close Well</Button>
+              </Col>
+              <br></br>
+              <Col md="4">
+                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> End Stage</Button>
+              </Col>
+              <br></br>
+              <Col md="4">
+                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i>End Shift</Button>
+              </Col>
               </CardBody>
             </Card>
           </Col>
@@ -566,19 +569,52 @@ class Dashboard extends Component {
               <CardHeader>
                 <strong>Current Shift Report</strong>
               </CardHeader>
-              <CardBody>
-                <FormGroup>
-                  <Label htmlFor="company">Company</Label>
-                  <Input type="text" id="company" placeholder="Enter your company name" />
-                </FormGroup>
-                <FormGroup>
-                  <Label htmlFor="vat">VAT</Label>
-                  <Input type="text" id="vat" placeholder="DE1234567890" />
-                </FormGroup>
-                <FormGroup>
-                  <Label htmlFor="street">Street</Label>
-                  <Input type="text" id="street" placeholder="Enter street name" />
-                </FormGroup>
+                <CardBody>
+                <strong>Completed Zones</strong>
+                <br></br>
+                <Col xs="12" sm="3">
+                <Table hover bordered striped responsive size="sm">
+                        <thead>
+                        <tr>
+                          <th>Well</th>
+                          <th>Stage</th>
+                          <th>Details</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Details</Button></td>
+                        </tr>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Details</Button></td>
+                        </tr>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Details</Button></td>
+                        </tr>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Details</Button></td>
+                        </tr>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Submit</Button></td>
+                        </tr>
+                        <tr>
+                          <td>ABC</td>
+                          <td>10</td>
+                          <td> <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Submit</Button></td>
+                        </tr>
+                        </tbody>
+                      </Table>
+                      </Col>
               </CardBody>
             </Card>
           </Col>

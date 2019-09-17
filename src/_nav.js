@@ -1,14 +1,6 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
-      url: '/dashboard',
-      badge: {
-        variant: 'info',
-        text: 'NEW',
-      },
-    },
-    {
       title: true,
       name: 'Frac Insite',
       wrapper: {            // optional wrapper object
@@ -73,23 +65,23 @@ export default {
       children: [
         {
           name: 'All',
-          url: '/Equipment/equipmentlocation',
+          url: '/Equipment/Equipmentlocation',
         },
         {
           name: 'Frac Pumps',
-          url: '/Equipment/FracPump',
+          url: '/Equipment/FracPumps',
         },
         {
           name: 'Blenders',
-          url: '/Equipment/blender',
+          url: '/Equipment/blenders',
         },
         {
           name: 'Data Vans',
-          url: '/Equipment/DataVan',
+          url: '/Equipment/DataVans',
         },
         {
           name: 'Hydration',
-          url: '/Equipment/Hydration',
+          url: '/Equipment/Hydrations',
         },
         {
           name: 'Tractors',
@@ -137,6 +129,14 @@ export default {
     },
     {
       divider: true,
+    },
+    {
+      name: 'Pads',
+      url: '/Pads',
+    },
+    {
+      name: 'Wells',
+      url: '/Wells',
     },
   ],
 };

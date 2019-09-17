@@ -1,6 +1,6 @@
 {
-  "name": "Pagnations",
+  "name": "Tractors",
   "version": "0.0.0",
   "private": true,
-  "main": "./Pagnations.js"
+  "main": "./Tractors.js"
 }

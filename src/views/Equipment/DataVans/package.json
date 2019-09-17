@@ -1,0 +1,6 @@
+{
+  "name": "DataVans",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DataVans.js"
+}

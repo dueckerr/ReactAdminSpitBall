@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-import TractorsData from './TractorsData'
+import HydrationsData from './HydrationsData'
 
-function TractorRow(props) {
-  const Tractor = props.Tractor
-  const TractorLink = `/Tractors/${Tractor.id}`
+function HydrationRow(props) {
+  const Hydration = props.Hydration
+  const HydrationLink = `/Hydrations/${Hydration.id}`
 
   const getBadge = (status) => {
     return status === 'Active' ? 'success' :
@@ -17,21 +17,21 @@ function TractorRow(props) {
   }
 
   return (
-    <tr key={Tractor.id.toString()}>
-      <th scope="row"><Link to={TractorLink}>{Tractor.id}</Link></th>
-      <td><Link to={TractorLink}>{Tractor.name}</Link></td>
-      <td>{Tractor.registered}</td>
-      <td>{Tractor.role}</td>
-      <td><Link to={TractorLink}><Badge color={getBadge(Tractor.status)}>{Tractor.status}</Badge></Link></td>
+    <tr key={Hydration.id.toString()}>
+      <th scope="row"><Link to={HydrationLink}>{Hydration.id}</Link></th>
+      <td><Link to={HydrationLink}>{Hydration.name}</Link></td>
+      <td>{Hydration.registered}</td>
+      <td>{Hydration.role}</td>
+      <td><Link to={HydrationLink}><Badge color={getBadge(Hydration.status)}>{Hydration.status}</Badge></Link></td>
     </tr>
   )
 }
 
-class Tractors extends Component {
+class Hydrations extends Component {
 
   render() {
 
-    const TractorList = TractorsData.filter((Tractor) => Tractor.id < 10)
+    const HydrationList = HydrationsData.filter((Hydration) => Hydration.id < 10)
 
     return (
       <div className="animated fadeIn">
@@ -39,7 +39,7 @@ class Tractors extends Component {
           <Col xl={6}>
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Tractors <small className="text-muted">example</small>
+                <i className="fa fa-align-justify"></i> Hydrations <small className="text-muted">example</small>
               </CardHeader>
               <CardBody>
                 <Table responsive hover>
@@ -53,8 +53,8 @@ class Tractors extends Component {
                     </tr>
                   </thead>
                   <tbody>
-                    {TractorList.map((Tractor, index) =>
-                      <TractorRow key={index} Tractor={Tractor}/>
+                    {HydrationList.map((Hydration, index) =>
+                      <HydrationRow key={index} Hydration={Hydration}/>
                     )}
                   </tbody>
                 </Table>
@@ -67,4 +67,4 @@ class Tractors extends Component {
   }
 }
 
-export default Tractors;
+export default Hydrations;
