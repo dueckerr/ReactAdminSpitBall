@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-import usersData from './PadData'
+import PadsData from './PadData'
 
-class User extends Component {
+class Pad extends Component {
 
   render() {
 
-    const user = usersData.find( user => user.id.toString() === this.props.match.params.id)
+    const Pad = PadsData.find( Pad => Pad.id.toString() === this.props.match.params.id)
 
-    const userDetails = user ? Object.entries(user) : [['id', (<span><i className="text-muted icon-ban"></i> Not found</span>)]]
+    const PadDetails = Pad ? Object.entries(Pad) : [['id', (<span><i className="text-muted icon-ban"></i> Not found</span>)]]
 
     return (
       <div className="animated fadeIn">
@@ -17,13 +17,13 @@ class User extends Component {
           <Col lg={6}>
             <Card>
               <CardHeader>
-                <strong><i className="icon-info pr-1"></i>User id: {this.props.match.params.id}</strong>
+                <strong><i className="icon-info pr-1"></i>Pad id: {this.props.match.params.id}</strong>
               </CardHeader>
               <CardBody>
                   <Table responsive striped hover>
                     <tbody>
                       {
-                        userDetails.map(([key, value]) => {
+                        PadDetails.map(([key, value]) => {
                           return (
                             <tr key={key}>
                               <td>{`${key}:`}</td>
@@ -43,4 +43,4 @@ class User extends Component {
   }
 }
 
-export default User;
+export default Pad;

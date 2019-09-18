@@ -38,43 +38,40 @@ class ModalExample extends React.Component {
   render() {
     return (
       <div>
-        <Button color="primary" onClick={this.toggle}>{this.props.buttonLabel}Start Stage</Button>
+        <Button color="primary" onClick={this.toggle}>{this.props.buttonLabel}Enter Equipment Note</Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
           <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
                   <FormGroup row>
                     <Col md="3">
-                      <Label htmlFor="text-input">Select Well</Label>
+                      <Label htmlFor="text-input">Select Equipment</Label>
                     </Col>
                     <Col xs="12" md="9">
                     <Input type="select" name="select" id="select">
                         <option value="0">Please select</option>
-                        <option value="1">Well 1</option>
-                        <option value="2">Well 2</option>
-                        <option value="3">Well 3</option>
-                        <option value="3">Well 4</option>
+                        <option value="1">123456</option>
+                        <option value="2">123456</option>
+                        <option value="3">123456</option>
+                        <option value="4">123456</option>
+                        <option value="5">123456</option>
+                        <option value="6">123456</option>
+                        <option value="7">123456</option>
+                        <option value="8">123456</option>
+                        <option value="9">123456</option>
+                        <option value="11">123456</option>
+                        <option value="12">123456</option>
+                        <option value="13">123456</option>
+                        <option value="14">123456</option>
+                        <option value="15">123456</option>
+                        <option value="16">123456</option>
+                        <option value="17">123456</option>
+                        <option value="18">123456</option>
+                        <option value="19">123456</option>
                       </Input>
                     </Col>
                   </FormGroup>
                   <FormGroup row>
-                    <Col md="3">
-                      <Label htmlFor="text-input">Enter Stage Number</Label>
-                    </Col>
-                    <Col xs="12" md="9">
-                    <Input type="text" id="name" placeholder="Enter your name" required />
-                    </Col>
-                  </FormGroup>
-                  <FormGroup row>
-                    <Col md="3">
-                      <Label htmlFor="text-input">Time Well Opened</Label>
-                    </Col>
-                    <Col xs="12" md="9">
-                    <Input type="text" id="name" placeholder="Enter your name" required />
-                    </Col>
-                  </FormGroup>
-                  <FormGroup row>
-
                     <Col md="9">
                       <Label htmlFor="textarea-input">Enter Notes</Label>
                     </Col>
@@ -83,19 +80,11 @@ class ModalExample extends React.Component {
                              placeholder="Content..." />
                     </Col>
                   </FormGroup>
-                </Form>            <br />
-            <Button color="success" onClick={this.toggleNested}>Show Nested Modal</Button>
-            <Modal isOpen={this.state.nestedModal} toggle={this.toggleNested} onClosed={this.state.closeAll ? this.toggle : undefined}>
-              <ModalHeader>Nested Modal title</ModalHeader>
-              <ModalBody>Stuff and things</ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={this.toggleNested}>Done</Button>{' '}
-                <Button color="secondary" onClick={this.toggleAll}>All Done</Button>
-              </ModalFooter>
-            </Modal>
-          </ModalBody>
+                </Form>            
+                <br />
+                </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+            <Button color="primary" onClick={this.toggle}>Enter</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>

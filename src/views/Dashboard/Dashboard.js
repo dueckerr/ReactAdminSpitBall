@@ -133,7 +133,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
+                        <h5 className="m-0 p-0">#1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -151,7 +151,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingTwo">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
+                        <h5 className="m-0 p-0">#2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
@@ -169,7 +169,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingThree">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
+                        <h5 className="m-0 p-0">#3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
@@ -200,7 +200,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Day 9/5/19</h5>
+                        <h5 className="m-0 p-0">Current Shift</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -285,7 +285,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
+                        <h5 className="m-0 p-0">#1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -303,7 +303,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingTwo">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
+                        <h5 className="m-0 p-0">#2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
@@ -321,7 +321,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingThree">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
+                        <h5 className="m-0 p-0">#3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
@@ -352,7 +352,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Day 9/5/19</h5>
+                        <h5 className="m-0 p-0">Current Shift</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -437,7 +437,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
+                        <h5 className="m-0 p-0">#1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -455,7 +455,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingTwo">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
+                        <h5 className="m-0 p-0">#2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
@@ -473,7 +473,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingThree">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
+                        <h5 className="m-0 p-0">#3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
@@ -504,7 +504,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Day 9/5/19</h5>
+                        <h5 className="m-0 p-0">Current Shift</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -589,7 +589,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
+                        <h5 className="m-0 p-0">#1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -607,7 +607,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingTwo">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
+                        <h5 className="m-0 p-0">#2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
@@ -625,7 +625,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingThree">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
+                        <h5 className="m-0 p-0">#3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
@@ -656,7 +656,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Day 9/5/19</h5>
+                        <h5 className="m-0 p-0">Current Shift</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -741,7 +741,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Collapsible Group Item #1</h5>
+                        <h5 className="m-0 p-0">#1</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
@@ -759,7 +759,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingTwo">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Collapsible Group Item #2</h5>
+                        <h5 className="m-0 p-0">#2</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
@@ -777,7 +777,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingThree">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Collapsible Group Item #3</h5>
+                        <h5 className="m-0 p-0">#3</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
@@ -808,7 +808,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Day 9/5/19</h5>
+                        <h5 className="m-0 p-0">Current Shift</h5>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">

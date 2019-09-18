@@ -1,8 +1,8 @@
 import React from 'react';
 
 const EquipmentLocation = React.lazy(() => import('./views/EquipmentLocation/Equipment'));
-const FracPump = React.lazy(() => import('./views/Equipment/FracPumps/FracPumps'));
-const FracPumps = React.lazy(() => import('./views/Equipment/FracPumps/FracPumps'));
+const FracPump = React.lazy(() => import('./views/FracPumps/FracPump'));
+const FracPumps = React.lazy(() => import('./views/FracPumps/FracPumps'));
 const blender = React.lazy(() => import('./views/Equipment/Blenders/blender'));
 const blenders = React.lazy(() => import('./views/Equipment/Blenders/blenders'));
 const DataVan = React.lazy(() => import('./views/Equipment/DataVans/DataVan'));
@@ -38,10 +38,10 @@ const CrewFleet4 = React.lazy(() => import('./views/Crews/Crews'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
-  { path: '/Equipment', exact: true, name: 'Equipment', component: FracPump },
+  // { path: '/Equipment', exact: true, name: 'Equipment', component: FracPump },
   { path: '/Equipment/EquipmentLocation', exact: true, name: 'Equipment', component: EquipmentLocation },
-  { path: '/Equipment/FracPumps', name: 'FracPumps', component: FracPumps },
-  { path: '/Equipment/FracPumps/:id', name: 'FracPumps', component: FracPump },
+  { path: '/FracPumps', name: 'FracPumps', component: FracPumps },
+  { path: '/FracPumps/:id', name: 'FracPumps', component: FracPump },
   { path: '/Equipment/blenders/:id', name: 'blender', component: blender },
   { path: '/Equipment/blenders', name: 'blenders', component: blenders },
   { path: '/Equipment/DataVans', name: 'DataVan', component: DataVans },

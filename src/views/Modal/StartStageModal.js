@@ -83,19 +83,11 @@ class ModalExample extends React.Component {
                              placeholder="Content..." />
                     </Col>
                   </FormGroup>
-                </Form>            <br />
-            <Button color="success" onClick={this.toggleNested}>Show Nested Modal</Button>
-            <Modal isOpen={this.state.nestedModal} toggle={this.toggleNested} onClosed={this.state.closeAll ? this.toggle : undefined}>
-              <ModalHeader>Nested Modal title</ModalHeader>
-              <ModalBody>Stuff and things</ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={this.toggleNested}>Done</Button>{' '}
-                <Button color="secondary" onClick={this.toggleAll}>All Done</Button>
-              </ModalFooter>
-            </Modal>
-          </ModalBody>
+                </Form>           
+                 <br />
+                </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
+            <Button color="primary" onClick={this.toggle}>Enter</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>

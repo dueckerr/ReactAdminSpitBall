@@ -69,7 +69,7 @@ export default {
         },
         {
           name: 'Frac Pumps',
-          url: '/Equipment/FracPumps',
+          url: '/FracPumps',
         },
         {
           name: 'Blenders',
@@ -115,14 +115,14 @@ export default {
         },
       ],
     },
-    {
-      name: 'Parts',
-      url: '/Equipment/forms',
-    },
-    {
-      name: 'Reports',
-      url: '/Equipment/jumbotrons',
-    },
+    // {
+    //   name: 'Parts',
+    //   url: '/Equipment/forms',
+    // },
+    // {
+    //   name: 'Reports',
+    //   url: '/Equipment/jumbotrons',
+    // },
     {
       name: 'Pump Maintenance',
       url: '/PumpMaintenance',

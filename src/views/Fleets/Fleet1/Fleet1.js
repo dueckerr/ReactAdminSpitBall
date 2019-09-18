@@ -14,8 +14,12 @@ import {
   FormGroup
 } from 'reactstrap';
 import { AppSwitch } from '@coreui/react'
+// import UpdatePumpHours from '../../Modal/UpdatePumpHours';
 const EndStageModal = lazy(() => import('../../Modal/EndStageModal'));
 const StartStageModal = lazy(() => import('../../Modal/StartStageModal'));
+const UpdatePumpHours = lazy(() => import('../../Modal/UpdatePumpHours'));
+const EqupimentModal = lazy(() => import('../../Modal/EquipmentModal'));
+const EndofShiftTabs = lazy(() => import('../../Tabs/EndofShiftTabs'));
 
 
 
@@ -143,13 +147,13 @@ class Dashboard extends Component {
               <Col md="4">
                 <EndStageModal></EndStageModal>
               </Col>
-              <br></br>
+              {/* <br></br>
               <Col md="4">
               <EndStageModal></EndStageModal>
-              </Col>
+              </Col> */}
               <br></br>
               <Col md="4">
-              {/* <ModalExample></ModalExample> */}
+              <EqupimentModal></EqupimentModal>
               </Col>
               </CardBody>
             </Card>
@@ -239,6 +243,7 @@ class Dashboard extends Component {
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
                       <CardBody>
+                        <UpdatePumpHours></UpdatePumpHours>
                       <Table hover bordered striped responsive size="sm">
                         <thead>
                         <tr>
@@ -573,9 +578,10 @@ class Dashboard extends Component {
                 <strong>Current Shift Report</strong>
               </CardHeader>
                 <CardBody>
-                <strong>Completed Zones</strong>
+              <Row>
                 <br></br>
-                <Col xs="12" sm="3">
+                <Col xs="12" sm="3" md="3" lg="3">
+                <strong>Completed Zones</strong>
                 <Table hover bordered striped responsive size="sm">
                         <thead>
                         <tr>
@@ -618,6 +624,10 @@ class Dashboard extends Component {
                         </tbody>
                       </Table>
                       </Col>
+                      <Col xs="12" sm="7" md="7" lg="7">
+                         <EndofShiftTabs></EndofShiftTabs>
+                      </Col>
+                      </Row>
               </CardBody>
             </Card>
           </Col>

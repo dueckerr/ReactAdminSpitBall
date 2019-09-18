@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, Col, Collapse, Button, Row } from 'reactstrap';
+import { Card, CardBody, CardHeader, Col, Collapse, Button, Row, Input, FormGroup, Form, Label } from 'reactstrap';
 
 class ListGroups extends Component {
   constructor(props) {
@@ -87,6 +87,47 @@ class ListGroups extends Component {
   render() {
     return (
       <div className="animated fadeIn">
+                  <CardHeader>
+                <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
+                  <FormGroup row>
+                  <strong>Filter Pumps</strong> 
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Input type="text" id="text-input" name="text-input" placeholder="Unit Number" />
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                      <Label htmlFor="select">Select Engie Type</Label>
+                    </Col>
+                    <Col xs="12" md="1" lg="2">
+                      <Input type="select" name="select" id="select">
+                        <option value="0">Please select</option>
+                        <option value="1">CAT</option>
+                        <option value="2">NRG</option>
+                        <option value="3">SPM</option>
+                      </Input>
+                    </Col>
+                    <Col xs="12" md="1" lg="1">
+                    <Label htmlFor="select">Select Fluid End Type</Label>
+                    </Col>
+                    <Col xs="12" md="1" lg="2">
+                      <Input type="select" name="select" id="select">
+                        <option value="0">Please select</option>
+                        <option value="1">CAT</option>
+                        <option value="2">Kerr Gen 3</option>
+                        <option value="3">Valtek</option>
+                        <option value="4">Endurance</option>
+                        <option value="5">JPM</option>
+                        <option value="6">ST9</option>
+                      </Input>
+                    </Col>
+                  </FormGroup>
+                </Form>
+          </CardHeader>
          <Row>
           <Col xs="12" sm="6" lg="12">
             <Card>
