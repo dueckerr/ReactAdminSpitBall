@@ -1,16 +1,16 @@
 import React from 'react';
 
 const EquipmentLocation = React.lazy(() => import('./views/EquipmentLocation/Equipment'));
-const FracPump = React.lazy(() => import('./views/FracPumps/FracPumps'));
-const FracPumps = React.lazy(() => import('./views/FracPumps/FracPumps'));
-const blender = React.lazy(() => import('./views/Blenders/blender'));
-const blenders = React.lazy(() => import('./views/Blenders/blenders'));
-const DataVan = React.lazy(() => import('./views/DataVans/DataVan'));
-const DataVans = React.lazy(() => import('./views/DataVans/DataVans'));
+const FracPump = React.lazy(() => import('./views/Equipment/FracPumps/FracPumps'));
+const FracPumps = React.lazy(() => import('./views/Equipment/FracPumps/FracPumps'));
+const blender = React.lazy(() => import('./views/Equipment/Blenders/blender'));
+const blenders = React.lazy(() => import('./views/Equipment/Blenders/blenders'));
+const DataVan = React.lazy(() => import('./views/Equipment/DataVans/DataVan'));
+const DataVans = React.lazy(() => import('./views/Equipment/DataVans/DataVans'));
 const Hydration = React.lazy(() => import('./views/Equipment/Hydrations/Hydration'));
 const Hydrations = React.lazy(() => import('./views/Equipment/Hydrations/Hydrations'));
-const Tractors = React.lazy(() => import('./views/Tractors/Tractors'));
-const Tractor = React.lazy(() => import('./views/Tractors/Tractor'));
+const Tractors = React.lazy(() => import('./views/Equipment/Tractors/Tractors'));
+const Tractor = React.lazy(() => import('./views/Equipment/Tractors/Tractor'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
 const Pads = React.lazy(() => import('./views/Pads/Pads'));

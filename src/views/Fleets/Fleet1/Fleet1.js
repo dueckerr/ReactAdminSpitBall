@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import {
   Button,
   Card,
@@ -14,6 +14,9 @@ import {
   FormGroup
 } from 'reactstrap';
 import { AppSwitch } from '@coreui/react'
+const EndStageModal = lazy(() => import('../../Modal/EndStageModal'));
+const StartStageModal = lazy(() => import('../../Modal/StartStageModal'));
+
 
 
 
@@ -134,19 +137,19 @@ class Dashboard extends Component {
               </CardHeader>
               <CardBody>
               <Col md="4">
-                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Start Stage</Button>
+              <StartStageModal></StartStageModal>
               </Col>
               <br></br>
               <Col md="4">
-                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i>Open/Close Well</Button>
+                <EndStageModal></EndStageModal>
               </Col>
               <br></br>
               <Col md="4">
-                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> End Stage</Button>
+              <EndStageModal></EndStageModal>
               </Col>
               <br></br>
               <Col md="4">
-                      <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i>End Shift</Button>
+              {/* <ModalExample></ModalExample> */}
               </Col>
               </CardBody>
             </Card>
