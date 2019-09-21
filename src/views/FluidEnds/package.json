@@ -1,0 +1,6 @@
+{
+  "name": "Wells",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Wells.js"
+}

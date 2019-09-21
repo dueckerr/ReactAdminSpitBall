@@ -1,39 +1,75 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-import usersData from './blenderdata'
+import BlendersData from './BlenderData'
 
-class User extends Component {
+function BlenderRow(props) {
+  const Blender = props.Blender
+  const BlenderLink = `/Blenders/${Blender.id}`
+
+  const getBadge = (status) => {
+    return status === 'Active' ? 'success' :
+      status === 'Inactive' ? 'secondary' :
+        status === 'Pending' ? 'warning' :
+          status === 'Banned' ? 'danger' :
+            'primary'
+  }
+
+  return (
+    <tr key={Blender.id.toString()}>
+      <th scope="row"><Link to={BlenderLink}>{Blender.id}</Link></th>
+      <td><Link to={BlenderLink}>{Blender.name}</Link></td>
+      <td>{Blender.Blender}</td>
+      <td>{Blender.Customer}</td>
+      <td>{Blender.Fleet}</td>
+      <td>{Blender.DateStarted}</td>
+      <td>{Blender.DateEnded}</td>
+      <td>{Blender.Stages}</td>
+      <td>{Blender.PumpingHours}</td>
+      <td>{Blender.NPTHours}</td>
+      <td><Link to={BlenderLink}><Badge color={getBadge(Blender.status)}>{Blender.status}</Badge></Link></td>
+    </tr>
+  )
+}
+
+class Blenders extends Component {
 
   render() {
 
-    const user = usersData.find( user => user.id.toString() === this.props.match.params.id)
-
-    const userDetails = user ? Object.entries(user) : [['id', (<span><i className="text-muted icon-ban"></i> Not found</span>)]]
+    const BlenderList = BlendersData.filter((Blender) => Blender.id < 10)
 
     return (
       <div className="animated fadeIn">
         <Row>
-          <Col lg={6}>
+          <Col xl={9}>
             <Card>
               <CardHeader>
-                <strong><i className="icon-info pr-1"></i>User id: {this.props.match.params.id}</strong>
+                <i className="fa fa-align-justify"></i> Blenders <small className="text-muted">example</small>
               </CardHeader>
               <CardBody>
-                  <Table responsive striped hover>
-                    <tbody>
-                      {
-                        userDetails.map(([key, value]) => {
-                          return (
-                            <tr key={key}>
-                              <td>{`${key}:`}</td>
-                              <td><strong>{value}</strong></td>
-                            </tr>
-                          )
-                        })
-                      }
-                    </tbody>
-                  </Table>
+                <Table responsive hover>
+                  <thead>
+                    <tr>
+                      <th scope="col">id</th>
+                      <th scope="col">Blender Name</th>
+                      <th scope="col">Blender</th>
+                      <th scope="col">Customer</th>
+                      <th scope="col">Fleet</th>
+                      <th scope="col">Date Started</th>
+                      <th scope="col">Date Ended</th>
+                      <th scope="col">Stages</th>
+                      <th scope="col">Pumping Hours</th>
+                      <th scope="col">NPT </th>
+                      <th scope="col">status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {BlenderList.map((Blender, index) =>
+                      <BlenderRow key={index} Blender={Blender}/>
+                    )}
+                  </tbody>
+                </Table>
               </CardBody>
             </Card>
           </Col>
@@ -43,4 +79,4 @@ class User extends Component {
   }
 }
 
-export default User;
+export default Blenders;

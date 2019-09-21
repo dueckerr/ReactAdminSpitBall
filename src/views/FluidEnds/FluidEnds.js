@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table, FormGroup, Label, Input } from 'reactstrap';
 
-import FracPumpsData from './FracPumpData'
+import FluidEndsData from './FluidEndData'
 
-function FracPumpRow(props) {
-  const FracPump = props.FracPump
-  const FracPumpLink = `/FracPumps/${FracPump.id}`
+function FluidEndRow(props) {
+  const FluidEnd = props.FluidEnd
+  const FluidEndLink = `/FluidEnds/${FluidEnd.id}`
 
   const getBadge = (status) => {
     return status === 'Active' ? 'success' :
@@ -17,24 +17,24 @@ function FracPumpRow(props) {
   }
 
   return (    
-  <tr key={FracPump.id.toString()}>
-  <th scope="row"><Link to={FracPumpLink}>{FracPump.id}</Link></th>
-  <td>{FracPump.engine}</td>
-  <td>{FracPump.Fluidend}</td>
-  <td>{FracPump.fluidendSize}</td>
-  <td>{FracPump.FESerialNumber}</td>
-  <td>{FracPump.currentHours}</td>
-  <td>{FracPump.location}</td>
-  <td><Link to={FracPumpLink}><Badge color={getBadge(FracPump.status)}>{FracPump.status}</Badge></Link></td>
+  <tr key={FluidEnd.id.toString()}>
+  <th scope="row"><Link to={FluidEndLink}>{FluidEnd.id}</Link></th>
+  <td>{FluidEnd.engine}</td>
+  <td>{FluidEnd.Fluidend}</td>
+  <td>{FluidEnd.fluidendSize}</td>
+  <td>{FluidEnd.FESerialNumber}</td>
+  <td>{FluidEnd.currentHours}</td>
+  <td>{FluidEnd.location}</td>
+  <td><Link to={FluidEndLink}><Badge color={getBadge(FluidEnd.status)}>{FluidEnd.status}</Badge></Link></td>
 </tr>
 )
 }
 
-class FracPumps extends Component {
+class FluidEnds extends Component {
 
 render() {
 
-const FracPumpList = FracPumpsData.filter((FracPump) => FracPump.id < 100)
+const FluidEndList = FluidEndsData.filter((FluidEnd) => FluidEnd.id < 100)
 
 return (
   <div className="animated fadeIn">
@@ -42,7 +42,7 @@ return (
     <Col xs="12" sm="8" md="8" lg="8">
         <Card>
           <CardHeader>
-            <i className="fa fa-align-justify"></i> FracPumps <small className="text-muted">example</small>
+            <i className="fa fa-align-justify"></i> FluidEnds <small className="text-muted">example</small>
           </CardHeader>
           <CardBody>
             <Table responsive hover>
@@ -58,8 +58,8 @@ return (
                 </tr>
               </thead>
               <tbody>
-                {FracPumpList.map((FracPump, index) =>
-                  <FracPumpRow key={index} FracPump={FracPump}/>
+                {FluidEndList.map((FluidEnd, index) =>
+                  <FluidEndRow key={index} FluidEnd={FluidEnd}/>
                 )}
               </tbody>
             </Table>
@@ -132,4 +132,4 @@ return (
   }
 }
 
-export default FracPumps;
+export default FluidEnds;

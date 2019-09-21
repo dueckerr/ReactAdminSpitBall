@@ -1,63 +1,39 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
+import { Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-import blenderdata from './blenderdata'
+import BlendersData from './BlenderData'
 
-function UserRow(props) {
-  const user = props.user
-  const userLink = `/users/${user.id}`
-
-  const getBadge = (status) => {
-    return status === 'Active' ? 'success' :
-      status === 'Inactive' ? 'secondary' :
-        status === 'Pending' ? 'warning' :
-          status === 'Banned' ? 'danger' :
-            'primary'
-  }
-
-  return (
-    <tr key={user.id.toString()}>
-      <th scope="row"><Link to={userLink}>{user.id}</Link></th>
-      <td><Link to={userLink}>{user.name}</Link></td>
-      <td>{user.registered}</td>
-      <td>{user.role}</td>
-      <td><Link to={userLink}><Badge color={getBadge(user.status)}>{user.status}</Badge></Link></td>
-    </tr>
-  )
-}
-
-class Users extends Component {
+class Blender extends Component {
 
   render() {
 
-    const userList = blenderdata.filter((user) => user.id < 10)
+    const Blender = BlendersData.find( Blender => Blender.id.toString() === this.props.match.params.id)
+
+    const BlenderDetails = Blender ? Object.entries(Blender) : [['id', (<span><i className="text-muted icon-ban"></i> Not found</span>)]]
 
     return (
       <div className="animated fadeIn">
         <Row>
-          <Col xl={6}>
+          <Col lg={6}>
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Users <small className="text-muted">example</small>
+                <strong><i className="icon-info pr-1"></i>Blender id: {this.props.match.params.id}</strong>
               </CardHeader>
               <CardBody>
-                <Table responsive hover>
-                  <thead>
-                    <tr>
-                      <th scope="col">id</th>
-                      <th scope="col">name</th>
-                      <th scope="col">registered</th>
-                      <th scope="col">role</th>
-                      <th scope="col">status</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {userList.map((user, index) =>
-                      <UserRow key={index} user={user}/>
-                    )}
-                  </tbody>
-                </Table>
+                  <Table responsive striped hover>
+                    <tbody>
+                      {
+                        BlenderDetails.map(([key, value]) => {
+                          return (
+                            <tr key={key}>
+                              <td>{`${key}:`}</td>
+                              <td><strong>{value}</strong></td>
+                            </tr>
+                          )
+                        })
+                      }
+                    </tbody>
+                  </Table>
               </CardBody>
             </Card>
           </Col>
@@ -67,4 +43,4 @@ class Users extends Component {
   }
 }
 
-export default Users;
+export default Blender;
