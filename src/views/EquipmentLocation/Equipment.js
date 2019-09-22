@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import { Button,   Collapse, Card, CardBody, CardHeader, Col, Row } from 'reactstrap';
-import { Badge, Pagination, PaginationItem, PaginationLink, Table } from 'reactstrap';
+const EquipmentCollapse = lazy(() => import('../Collapse/EquipmentCollapse'));
+const ShopEquipmentCollapse = lazy(() => import('../Collapse/ShopEquipmentCollapse'));
 
 class Breadcrumbs extends Component {
   constructor(props) {
@@ -90,378 +91,105 @@ class Breadcrumbs extends Component {
         <Row>
           <Col xs="12" lg="6">
           <Card>
-              <CardHeader>
+          <CardHeader>
                 <i className="fa fa-align-justify"></i> Fleet 1 Equipment 
                 <div className="card-header-actions">
                 </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                      <h5 className="m-0 p-0">Frac Pumps ('19')</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Blenders</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Datavan</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Hydration</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Tractors</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
+        
           <Col xs="12" lg="6">
           <Card>
-              <CardHeader>
+          <CardHeader>
                 <i className="fa fa-align-justify"></i> Fleet 2 Equipment 
                 <div className="card-header-actions">
                 </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                      <h5 className="m-0 p-0">Frac Pumps </h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Blenders</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Datavan</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Hydration</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Tractors</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
         </Row>
 
         <Row>
 
           <Col xs="12" lg="6">
           <Card>
-              <CardHeader>
+          <CardHeader>
                 <i className="fa fa-align-justify"></i> Fleet 3 Equipment 
                 <div className="card-header-actions">
                 </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                      <h5 className="m-0 p-0">Frac Pumps</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Blenders</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Datavan</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Hydration</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Tractors</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
 
           <Col xs="12" lg="6">
           <Card>
-              <CardHeader>
+          <CardHeader>
                 <i className="fa fa-align-justify"></i> Fleet 4 Equipment 
                 <div className="card-header-actions">
                 </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Frac Pumps</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Blenders</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Datavan</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Hydration</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Tractors</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
 
         </Row>
 
+        <Row>
+
+          <Col xs="12" lg="6">
+          <Card>
+          <CardHeader>
+                <i className="fa fa-align-justify"></i> Fleet 5 Equipment 
+                <div className="card-header-actions">
+                </div>
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
+
+          <Col xs="12" lg="6">
+          <Card>
+          <CardHeader>
+                <i className="fa fa-align-justify"></i> Fleet 6 Equipment 
+                <div className="card-header-actions">
+                </div>
+          </CardHeader>
+          <CardBody>
+            <EquipmentCollapse> </EquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
+
+        </Row>
+
+
+
         <Col xs="12" lg="12">
           <Card>
-              <CardHeader>
+          <CardHeader>
                 <i className="fa fa-align-justify"></i> Shop Equipment 
                 <div className="card-header-actions">
                 </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Frac Pumps</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123  123123123
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Blenders</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Datavan</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Hydration</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Tractors</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                          23456
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+          </CardHeader>
+          <CardBody>
+            <ShopEquipmentCollapse> </ShopEquipmentCollapse>
+         </CardBody>
+          </Card>
+        </Col>
 
       </div>
 

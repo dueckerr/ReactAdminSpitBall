@@ -19,12 +19,15 @@ function FluidEndRow(props) {
   return (    
   <tr key={FluidEnd.id.toString()}>
   <th scope="row"><Link to={FluidEndLink}>{FluidEnd.id}</Link></th>
-  <td>{FluidEnd.engine}</td>
-  <td>{FluidEnd.Fluidend}</td>
-  <td>{FluidEnd.fluidendSize}</td>
-  <td>{FluidEnd.FESerialNumber}</td>
-  <td>{FluidEnd.currentHours}</td>
-  <td>{FluidEnd.location}</td>
+  <td>{FluidEnd.FluidEndType}</td>
+  <td>{FluidEnd.FESize}</td>
+  <td>{FluidEnd.ValveType}</td>
+  <td>{FluidEnd.ValveLife}</td>
+  <td>{FluidEnd.SeatType}</td>
+  <td>{FluidEnd.SeatLife}</td>
+  <td>{FluidEnd.DRingType}</td>
+  <td>{FluidEnd.DRingLife}</td>
+  <td>{FluidEnd.Count}</td>
   <td><Link to={FluidEndLink}><Badge color={getBadge(FluidEnd.status)}>{FluidEnd.status}</Badge></Link></td>
 </tr>
 )
@@ -48,13 +51,18 @@ return (
             <Table responsive hover>
               <thead>
                 <tr>
-                  <th scope="col">Unit Number</th>
-                  <th scope="col">Engine</th>
+                  <th scope="col">id</th>
                   <th scope="col">Fluid End Type</th>
                   <th scope="col">Fluid End Size</th>
-                  <th scope="col">Fluid End Serial Number</th>
-                  <th scope="col">Current Pumping Hours</th>
-                  <th scope="col">Location</th>
+                  <th scope="col">Valve Type</th>
+                  <th scope="col">Life Span</th>
+                  <th scope="col">Seat Type</th>
+                  <th scope="col">Life Span</th>
+                  <th scope="col">D-Ring Type</th>
+                  <th scope="col">Life Span</th>
+                  <th scope="col">Count</th>
+
+
                 </tr>
               </thead>
               <tbody>

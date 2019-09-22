@@ -1,5 +1,9 @@
 const WellsData = [
-  {id: 0, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '105:34', status: 'Finsihed'},
+  {id: 0, FluidEndType: 'Kerr F1X', FESize: 'Q', ValveType: 'DFW 4\'', ValveLife: '100', SeatType: 'Super Seat 4\'', SeatLife: '200', DRingType: 'D-Ring SPM', DRingLife: '100', Count: '10'},
+  {id: 0, FluidEndType: 'CAT', FESize: 'Q', ValveType: 'DFW 4.5\'', ValveLife: '100', SeatType: 'DFW 4.5\'', SeatLife: '200', DRingType: 'D-Ring', DRingLife: '100', Count: '10'},
+  {id: 0, FluidEndType: 'SPM', FESize: 'Q', ValveType: 'DFW 4\'', ValveLife: '100', SeatType: 'DFW 4\'', SeatLife: '200', DRingType: 'D-Ring', DRingLife: '100', Count: '10'},
+  {id: 0, FluidEndType: 'JPM', FESize: 'Q', ValveType: 'DFW 4\'', ValveLife: '100', SeatType: 'DFW 4\'', SeatLife: '200', DRingType: 'D-Ring', DRingLife: '100', Count: '10'},
+  {id: 0, FluidEndType: 'Kerr F1X', FESize: 'Q', ValveType: 'DFW 4\'', ValveLife: '100', SeatType: 'DFW 4\'', SeatLife: '200', DRingType: 'D-Ring', DRingLife: '100', Count: '10'},
   // {id: 1, name: 'Samppa Nori', registered: '2018/01/01', role: 'Supervisor', status: 'Active'},
   // {id: 2, name: 'Estavan Lykos', registered: '2018/02/01', role: 'Field Supervisor', status: 'Finished'},
   // {id: 3, name: 'Chetan Mohamed', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
