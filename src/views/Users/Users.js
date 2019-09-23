@@ -20,8 +20,10 @@ function UserRow(props) {
     <tr key={user.id.toString()}>
       <th scope="row"><Link to={userLink}>{user.id}</Link></th>
       <td><Link to={userLink}>{user.name}</Link></td>
-      <td>{user.registered}</td>
+      <td>{user.email}</td>
       <td>{user.role}</td>
+      <td>{user.Fleet}</td>
+      <td>{user.Crew}</td>
       <td><Link to={userLink}><Badge color={getBadge(user.status)}>{user.status}</Badge></Link></td>
     </tr>
   )
@@ -31,7 +33,7 @@ class Users extends Component {
 
   render() {
 
-    const userList = usersData.filter((user) => user.id < 10)
+    const userList = usersData.filter((user) => user.id < 100)
 
     return (
       <div className="animated fadeIn">

@@ -19,27 +19,27 @@ export default {
         },        
         {
           name: 'Fleet 1',
-          url: '/Fleets/Fleet1',
+          url: '/OpsFleets/Fleet1',
         },
         {
           name: 'Fleet 2',
-          url: '/Fleets/Fleet2',
+          url: '/OpsFleets/Fleet2',
         },
         {
           name: 'Fleet 3',
-          url: '/Fleets/Fleet3',
+          url: '/OpsFleets/Fleet3',
         },
         {
           name: 'Fleet 4',
-          url: '/Fleets/Fleet4',
+          url: '/OpsFleets/Fleet4',
         },
         {
           name: 'Fleet 5',
-          url: '/Fleets/Fleet4',
+          url: '/OpsFleets/Fleet4',
         },
         {
           name: 'Fleet 6',
-          url: '/Fleets/Fleet4',
+          url: '/OpsFleets/Fleet4',
         },
       ],
     },
@@ -127,148 +127,39 @@ export default {
       url: '/Wells',
     },
   {
-    name: 'Crews',
+    name: 'Users',
     url: '/Crews',
     children: [
         {
+          name: 'All',
+          url: '/users',
+        },        
+        {
           name: 'Fleet 1',
-          url: '/dashboard',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
+          url: 'Users/Fleet1Users',
         },        
         {
           name: 'Fleet 2',
-          url: '/Fleets/Fleet1',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
-        },
-        {
-          name: 'Fleet 3',
-          url: '/Fleets/Fleet3',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
-        },
-        {
-          name: 'Fleet 4',
-          url: '/Fleets/Fleet4',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
-        },
-        {
-          name: 'Fleet 5',
-          url: '/Fleets/AddFleet',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
-        },
-        {
-          name: 'Fleet 6',
-          url: '/Fleets/Fleet2',
-          children: [
-            {
-              name: '-CREW 1',
-              url: '/dashboard',
-            },        
-            {
-              name: '-CREW 2',
-              url: '/Fleets/Fleet1',
-            },
-            {
-              name: '-CREW 3',
-              url: '/Fleets/Fleet3',
-            },
-          ]
-        },
-      ],
-   },
-  {
-      name: 'Fleets',
-      url: '/dashboard',
-      children: [
-        {
-          name: 'Fleet 1',
-          url: '/dashboard',
+          url: 'Users/Fleet2Users',
         },        
         {
-          name: 'Fleet 2',
-          url: '/Fleets/Fleet1',
-        },
-        {
           name: 'Fleet 3',
-          url: '/Fleets/Fleet3',
-        },
+          url: 'Users/Fleet3Users',
+        },        
         {
           name: 'Fleet 4',
-          url: '/Fleets/Fleet4',
-        },
+          url: 'Users/Fleet4Users',
+        },        
         {
           name: 'Fleet 5',
-          url: '/Fleets/AddFleet'
-        },
+          url: 'Users/Fleet5Users',
+        },        
         {
           name: 'Fleet 6',
-          url: '/Fleets/Fleet2',
-        },
+          url: 'Users/Fleet6Users',
+        },        
       ],
    },
+
   ],
 };

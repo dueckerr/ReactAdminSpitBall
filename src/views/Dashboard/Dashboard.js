@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, lazy } from 'react';
 import {
   Button,
   Card,
@@ -8,6 +8,9 @@ import {
   Collapse,
   Row,
 } from 'reactstrap';
+const EndofShiftTabs = lazy(() => import('../Tabs/EndofShiftTabs'));
+const EOSCollapse = lazy(() => import('../Collapse/EOSCollapse'));
+
 
 
 class Dashboard extends Component {
@@ -189,65 +192,7 @@ class Dashboard extends Component {
             </Card>
           </Col>
           <Col xs="12" sm="6" lg="5">
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> End of Shift Reports 
-                <div className="card-header-actions">
-                </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Current Shift</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Night 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Day 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
+            <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
         <Row>
@@ -341,65 +286,7 @@ class Dashboard extends Component {
             </Card>
           </Col>
           <Col xs="12" sm="6" lg="5">
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> End of Shift Reports 
-                <div className="card-header-actions">
-                </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Current Shift</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Night 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Day 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
+            <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
         <Row>
@@ -493,65 +380,7 @@ class Dashboard extends Component {
             </Card>
           </Col>
           <Col xs="12" sm="6" lg="5">
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> End of Shift Reports 
-                <div className="card-header-actions">
-                </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Current Shift</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Night 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Day 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
+            <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
         <Row>
@@ -645,65 +474,7 @@ class Dashboard extends Component {
             </Card>
           </Col>
           <Col xs="12" sm="6" lg="5">
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> End of Shift Reports 
-                <div className="card-header-actions">
-                </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Current Shift</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Night 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Day 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
+            <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
         <Row>
@@ -797,65 +568,7 @@ class Dashboard extends Component {
             </Card>
           </Col>
           <Col xs="12" sm="6" lg="5">
-            <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i> End of Shift Reports 
-                <div className="card-header-actions">
-                </div>
-              </CardHeader>
-              <CardBody>
-                <div id="accordion">
-                  <Card className="mb-0">
-                    <CardHeader id="headingOne">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">Current Shift</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore atio.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                    </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingTwo">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(1)} aria-expanded={this.state.accordion[1]} aria-controls="collapseTwo">
-                        <h5 className="m-0 p-0">Night 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[1]} data-parent="#accordion" id="collapseTwo">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                  <Card className="mb-0">
-                    <CardHeader id="headingThree">
-                      <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(2)} aria-expanded={this.state.accordion[2]} aria-controls="collapseThree">
-                        <h5 className="m-0 p-0">Day 9/4/19</h5>
-                      </Button>
-                    </CardHeader>
-                    <Collapse isOpen={this.state.accordion[2]} data-parent="#accordion" id="collapseThree">
-                      <CardBody>
-                      <div>Zones Completed: X</div>
-                      <div>Pumping Hours: XX:xx</div>
-                      <div>NPT: XX:xx</div>
-                      <div>Reason for NPT: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                      <div>Equipment Issues: Lorem ipsum dolor sit amet,  quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </div>
-                      </CardBody>
-                    </Collapse>
-                  </Card>
-                </div>
-              </CardBody>
-            </Card>
+            <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
       </div>

@@ -53,287 +53,323 @@ class Tables extends Component {
             <Table hover bordered striped responsive size="sm">
               <thead>
               <tr>
-                <th>Username</th>
-                <th>Date registered</th>
-                <th>Role</th>
-                <th>Status</th>
+                <th>Pump Number</th>
+                <th>Date </th>
+                <th>Hours</th>
+                <th>Maintenance</th>
+                <th>Details</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>2512</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>2223</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>2908</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>2731</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>1709</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>902</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1863</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>1098</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>1863</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>872</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>1863</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>1221</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>1221</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr><tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>1221</td>
+                <td>Valves & Seats</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>1863</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>2021</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>221</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr><tr>
-                <td>Vishnu Serghei</td>
+                <td>182012</td>
                 <td>2012/01/01</td>
-                <td>Member</td>
+                <td>2921</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Zbyněk Phoibos</td>
+                <td>171045</td>
                 <td>2012/02/01</td>
-                <td>Staff</td>
+                <td>1142</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Einar Randall</td>
+                <td>171055</td>
                 <td>2012/02/01</td>
-                <td>Admin</td>
+                <td>2421</td>
+                <td>Packing</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Félix Troels</td>
+                <td>182099</td>
                 <td>2012/03/01</td>
-                <td>Member</td>
+                <td>2121</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>
               </tr>
               <tr>
-                <td>Aulus Agmundr</td>
+                <td>182101</td>
                 <td>2012/01/21</td>
-                <td>Staff</td>
+                <td>1621</td>
+                <td>Valves</td>
                 <td>
                   <Badge color="success">Details</Badge>
                 </td>

@@ -1,5 +1,10 @@
 const WellsData = [
-  {id: 0, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '105:34', status: 'Finsihed'},
+  {id: 0, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
+  {id: 1, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
+  {id: 2, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
+  {id: 3, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
+  {id: 4, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
+  {id: 5, name: 'Well ABC', Pad: 'Devon XYZ', Customer: 'Devon', Fleet: 'Fleet 5', DateStarted: '2018/01/01', DateEnded: '2018/01/01', Stages: '50', PumpingHours: '105:34', NPTHours: '15:34', status: 'Finsihed'},
   // {id: 1, name: 'Samppa Nori', registered: '2018/01/01', role: 'Supervisor', status: 'Active'},
   // {id: 2, name: 'Estavan Lykos', registered: '2018/02/01', role: 'Field Supervisor', status: 'Finished'},
   // {id: 3, name: 'Chetan Mohamed', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
