@@ -1,5 +1,5 @@
 import React, { Component, lazy } from 'react';
-import { Badge, Button, Card, CardBody, CardFooter, CardHeader, Col, Collapse, Fade, Row, PaginationLink, PaginationItem, Pagination } from 'reactstrap';
+import { Button, Card, CardBody, CardHeader, Col, Collapse, Row,} from 'reactstrap';
 const EndofShiftTabs = lazy(() => import('../Tabs/EndofShiftTabs'));
 
 class Collapses extends Component {

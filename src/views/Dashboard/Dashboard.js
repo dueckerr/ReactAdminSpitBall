@@ -191,7 +191,7 @@ class Dashboard extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" lg="5">
+          <Col xs="12" sm="6" lg="6">
             <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
@@ -285,7 +285,7 @@ class Dashboard extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="12" sm="6" lg="5">
+          <Col xs="12" sm="6" lg="6">
             <EOSCollapse></EOSCollapse>
           </Col>
         </Row>
@@ -296,7 +296,7 @@ class Dashboard extends Component {
                 <div className="text-value">Fleet 3</div>
                 <div>Current Pad: Spud Muffin</div>
                 <div>Customer: Devon</div>
-                <div>Pad Progress: 40 of 150 Stages</div>
+                <div>Pad Progress: 40 of 160 Stages</div>
                 <div>NPT Last 24: XX:XX</div>
                 <div>Pump Hours Last 24: XX:XX</div>
                 <div>Stages Last 24: X </div>
@@ -315,7 +315,7 @@ class Dashboard extends Component {
           <Col xs="12" sm="6" lg="4">
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Last 5 Zones
+                <i className="fa fa-align-justify"></i> Last 6 Zones
                 <div className="card-header-actions">
                 </div>
               </CardHeader>
@@ -324,7 +324,7 @@ class Dashboard extends Component {
                   <Card className="mb-0">
                     <CardHeader id="headingOne">
                       <Button block color="link" className="text-left m-0 p-0" onClick={() => this.toggleAccordion(0)} aria-expanded={this.state.accordion[0]} aria-controls="collapseOne">
-                        <h5 className="m-0 p-0">#1</h5>
+                        <h6 className="m-0 p-0">#1</h6>
                       </Button>
                     </CardHeader>
                     <Collapse isOpen={this.state.accordion[0]} data-parent="#accordion" id="collapseOne" aria-labelledby="headingOne">

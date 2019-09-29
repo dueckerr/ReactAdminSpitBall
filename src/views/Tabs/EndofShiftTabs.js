@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardBody, Table, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Table, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
 export default class Example extends React.Component {
